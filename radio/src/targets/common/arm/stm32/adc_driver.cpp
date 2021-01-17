@@ -24,7 +24,7 @@
   // not needed
 #elif defined(RADIO_T16)
   const int8_t adcDirection[NUM_ANALOGS] = {1,-1,1,-1,  1,1,1,  -1,1,  -1,1};
-#elif defined(RADIO_T18)
+#elif defined(RADIO_T18) || defined(RADIO_TX18S)
   const int8_t adcDirection[NUM_ANALOGS] = { 1,-1,1,-1, -1,1,-1,  -1,1,  -1,1 };
 #elif defined(RADIO_TX16S)
   const int8_t adcDirection[NUM_ANALOGS] = {1,-1,1,-1,  1,1,1,  -1,1,  -1,1};

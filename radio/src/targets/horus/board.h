@@ -578,6 +578,10 @@ void usbJoystickUpdate();
   #define USB_NAME                     "RM TX16S"
   #define USB_MANUFACTURER             'R', 'M', '_', 'T', 'X', ' ', ' ', ' '  /* 8 bytes */
   #define USB_PRODUCT                  'R', 'M', ' ', 'T', 'X', '1', '6', 'S'  /* 8 Bytes */
+#elif defined(RADIO_TX16S)
+  #define USB_NAME                     "RK TX18S"
+  #define USB_MANUFACTURER             'R', 'K', '_', 'T', 'X', ' ', ' ', ' '  /* 8 bytes */
+  #define USB_PRODUCT                  'R', 'K', ' ', 'T', 'X', '1', '8', 'S'  /* 8 Bytes */
 #elif defined(PCBX10)
   #define USB_NAME                     "FrSky X10"
   #define USB_MANUFACTURER             'F', 'r', 'S', 'k', 'y', ' ', ' ', ' '  /* 8 bytes */

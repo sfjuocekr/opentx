@@ -234,6 +234,16 @@
     <file>images/simulator/TX16S/left_tele.png</file>
     <file>images/simulator/TX16S/right_ent.png</file>
     <file>images/simulator/TX16S/right_mdl.png</file>
+    <file>images/simulator/TX18S/left.png</file>
+    <file>images/simulator/TX18S/right.png</file>
+    <file>images/simulator/TX18S/top.png</file>
+    <file>images/simulator/TX18S/bottom.png</file>
+    <file>images/simulator/TX18S/left_mdl.png</file>
+    <file>images/simulator/TX18S/left_page.png</file>
+    <file>images/simulator/TX18S/left_sys.png</file>
+    <file>images/simulator/TX18S/left_tele.png</file>
+    <file>images/simulator/TX18S/right_ent.png</file>
+    <file>images/simulator/TX18S/right_rtn.png</file>
     <file>images/wizard/ailerons.png</file>
     <file>images/wizard/airbrakes.png</file>
     <file>images/wizard/elevons.png</file>

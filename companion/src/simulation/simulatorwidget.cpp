@@ -106,6 +106,9 @@ SimulatorWidget::SimulatorWidget(QWidget * parent, SimulatorInterface * simulato
     case Board::BOARD_RADIOMASTER_TX16S:
       radioUiWidget = new SimulatedUIWidgetTX16S(simulator, this);
       break;
+    case Board::BOARD_RADIOKING_TX18S:
+      radioUiWidget = new SimulatedUIWidgetTX18S(simulator, this);
+      break;
     default:
       radioUiWidget = new SimulatedUIWidget9X(simulator, this);
       break;

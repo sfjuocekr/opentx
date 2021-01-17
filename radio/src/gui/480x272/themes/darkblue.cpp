@@ -143,6 +143,8 @@ class DarkblueTheme: public Theme
       calibHorus = BitmapBuffer::load(getThemePath("t18.bmp"));
 #elif defined(RADIO_TX16S)
       calibHorus = BitmapBuffer::load(getThemePath("tx16s.bmp"));
+#elif defined(RADIO_TX18S)
+      calibHorus = BitmapBuffer::load(getThemePath("tx18s.bmp"));
 #elif defined(PCBX10)
       if(STICKS_PWM_ENABLED()) {
         calibHorus = BitmapBuffer::load(getThemePath("X10S.bmp"));

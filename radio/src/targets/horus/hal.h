@@ -322,7 +322,7 @@
   #define ADC_TRANSFER_COMPLETE()       (ADC_DMA->LISR & DMA_LISR_TCIF0)
   #if defined(RADIO_TX16S)
     #define ADC_VREF_PREC2              330
-  #elif defined(RADIO_T16) || defined(RADIO_T18)
+  #elif defined(RADIO_T16) || defined(RADIO_T18) || defined(RADIO_TX18S)
     #define ADC_VREF_PREC2              300
   #else
     #define ADC_VREF_PREC2              250
@@ -330,7 +330,7 @@
 #endif
 
 // Power
-#if defined(RADIO_T18)
+#if defined(RADIO_T18) || defined(RADIO_TX18S)
 #define PWR_RCC_AHB1Periph              RCC_AHB1Periph_GPIOJ | RCC_AHB1Periph_GPIOB
 #define PWR_ON_GPIO                     GPIOJ
 #define PWR_ON_GPIO_PIN                 GPIO_Pin_1  // PJ.01
@@ -527,7 +527,7 @@
   #define LCD_GPIO_NRST                 GPIOI
   #define LCD_GPIO_PIN_NRST             GPIO_Pin_10 // PI.10
 #endif
-#if defined(PCBX10) && !defined(RADIO_T18) && !defined(SIMU)
+#if defined(PCBX10) && !defined(RADIO_T18) && !defined(RADIO_TX18S) && !defined(SIMU)
   #define LCD_VERTICAL_INVERT
 #endif
 #define LTDC_IRQ_PRIO                   4
@@ -565,7 +565,7 @@
   #define BACKLIGHT_GPIO_AF                    GPIO_AF_TIM8
   #define BACKLIGHT_TIMER_FREQ                 (PERI2_FREQUENCY * TIMER_MULT_APB2)
 #endif
-#if defined(RADIO_T18)
+#if defined(RADIO_T18) || defined(RADIO_TX18S)
   #define KEYS_BACKLIGHT_RCC_AHB1Periph        RCC_AHB1Periph_GPIOC
   #define KEYS_BACKLIGHT_GPIO                  GPIOC
   #define KEYS_BACKLIGHT_GPIO_PIN              GPIO_Pin_4  // PC.04

@@ -83,6 +83,8 @@ uint32_t Boards::getFourCC(Type board)
       return 0x3F78746F;
     case BOARD_JUMPER_T18:
       return 0x4078746F;
+    case BOARD_RADIOKING_TX18S:
+      return 0x4278746F;
     case BOARD_RADIOMASTER_TX16S:
       return 0x3878746F;
     case BOARD_RADIOMASTER_TX12:
@@ -126,6 +128,7 @@ int Boards::getEEpromSize(Board::Type board)
     case BOARD_JUMPER_T16:
     case BOARD_JUMPER_T18:
     case BOARD_RADIOMASTER_TX16S:
+    case BOARD_RADIOKING_TX18S:
       return 0;
   }
 
@@ -157,9 +160,10 @@ int Boards::getFlashSize(Type board)
     case BOARD_HORUS_X12S:
     case BOARD_X10:
     case BOARD_X10_EXPRESS:
+    case BOARD_RADIOMASTER_TX16S:
     case BOARD_JUMPER_T16:
     case BOARD_JUMPER_T18:
-    case BOARD_RADIOMASTER_TX16S:
+    case BOARD_RADIOKING_TX18S:
       return FSIZE_HORUS;
     case BOARD_UNKNOWN:
       return FSIZE_MAX;
@@ -578,6 +582,8 @@ QString Boards::getBoardName(Board::Type board)
       return "Jumper T16";
     case BOARD_JUMPER_T18:
       return "Jumper T18";
+    case BOARD_RADIOKING_TX18S:
+      return "Radioking TX18S";
     case BOARD_RADIOMASTER_TX16S:
       return "Radiomaster TX16S";
     case BOARD_RADIOMASTER_TX12:

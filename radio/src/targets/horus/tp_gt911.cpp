@@ -466,6 +466,7 @@ bool touchPanelInit(void)
 
     TRACE("Reading Touch registry");
     I2C_GT911_ReadRegister(GT_PID_REG, tmp, 4);
+    TRACE("%s", (char *) tmp);
 
     if (strcmp((char *) tmp, "911") == 0) //ID==9147
     {

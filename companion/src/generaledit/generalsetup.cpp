@@ -197,7 +197,7 @@ ui(new Ui::GeneralSetup)
     ui->label_OFFBright->hide();
   }
 
-  if (!IS_JUMPER_T18(firmware->getBoard())) {
+  if (!IS_JUMPER_T18(firmware->getBoard()) && !IS_RADIOKING_TX18S(firmware->getBoard())) {
     ui->keysBl_ChkB->hide();
     ui->keysBl_ChkB->setDisabled(true);
     ui->label_KeysBl->hide();
