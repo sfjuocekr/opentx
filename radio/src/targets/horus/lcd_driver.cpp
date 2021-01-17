@@ -142,7 +142,7 @@ static void LCD_NRSTConfig(void)
 }
 
 // TODO delay function
-#if !defined(RADIO_T18) || !defined(RADIO_T18)
+#if !defined(RADIO_T18) && !defined(RADIO_T18)
 static void delay3(uint32_t nCount)
 {
   uint32_t index = 0;
